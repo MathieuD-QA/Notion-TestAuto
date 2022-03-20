@@ -1,0 +1,77 @@
+{
+        "parent": { "page_id": "77bd295ab6bf40388d592a80ee7ce6ba" },
+        "title": [
+        {
+            "type": "text",
+            "text": {
+                "content": "Test Auto",
+                "link": null
+            },
+            "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+            },
+            "plain_text": "Test Auto",
+            "href": null
+        }
+    ],
+        "properties": {
+                 "Commentaire": {
+            "id": "UMmC",
+            "name": "Commentaire",
+            "type": "rich_text",
+            "rich_text": {}
+        },
+        "Env": {
+            "id": "teMU",
+            "name": "Env",
+            "type": "rich_text",
+            "rich_text": {}
+        },
+        "Status": {
+            "id": "wiAS",
+            "name": "Status",
+            "type": "select",
+            "select": {
+                "options": [
+                    {
+                        "id": "32411bd6-a0c8-43e2-84bb-4359e44d255e",
+                        "name": "PASSED",
+                        "color": "green"
+                    },
+                    {
+                        "id": "b846ada8-bc9c-4141-b835-5dba838e91c2",
+                        "name": "FAILED",
+                        "color": "red"
+                    },
+                    {
+                        "id": "9a8e372f-5c70-48e3-bf2c-c4ccfa7b690c",
+                        "name": "ABORTED",
+                        "color": "blue"
+                    },
+                    {
+                        "id": "3ffaf160-1583-491f-9022-60f493ba01cc",
+                        "name": "TODO",
+                        "color": "gray"
+                    }
+                ]
+            }
+        },
+
+
+
+            "Name": {
+            "id": "title",
+            "name": "Name",
+            "type": "title",
+            "title": {}
+        }
+
+        }
+}
+
+

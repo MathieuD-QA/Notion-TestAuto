@@ -1,0 +1,29 @@
+{
+  "parent": { "database_id": "56330dc7-2a62-4125-8297-8d3f1160ebc5" },
+        "properties": {
+            "Name": {
+    "title": [
+      {
+        "type": "text",
+        "text": {
+          "content": "The title"
+        }
+      }
+    ]
+  },
+
+
+"Status": {
+    "select":
+      {
+        "name": "PASSED"
+      }
+  }
+
+
+
+        }
+
+
+    }
+

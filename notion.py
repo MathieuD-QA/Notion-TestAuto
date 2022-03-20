@@ -1,4 +1,5 @@
 import requests
+import json
 import os
 from dotenv import load_dotenv
 from pathlib import Path
@@ -51,37 +52,22 @@ class Notion:
 
 
     def createPage(self):
-        r = requests.post('https://api.notion.com/v1/pages', json={
-        "parent": { "database_id": "c9d39095c55444fdb055a30ef835214f" },
-        "properties": {
-            "Name": {
-    "title": [
-      {
-        "type": "text",
-        "text": {
-          "content": "The title"
-        }
-      }
-    ]
-  },
-
-
-"Status": {
-    "select":
-      {
-        "name": "PASSED"
-      }
-  }
-
-
-
-        }
-
-
-    },headers=self.hed)
+        with open("/Users/mathieu/Desktop/notion_testcafe/createPage.json") as jsonFile:
+            jsonObject = json.load(jsonFile)
+            jsonFile.close()
+        r = requests.post('https://api.notion.com/v1/pages', json=jsonObject,headers=self.hed)
         print(r.status_code)
         print(r.json())
 
+
+
+    def createDB(self):
+        with open("/createDB.json") as jsonFile:
+            jsonObject = json.load(jsonFile)
+            jsonFile.close()
+        r = requests.post('https://api.notion.com/v1/databases', json=jsonObject,headers=self.hed)
+        print(r.status_code)
+        print(r.json())
 
 testcafe = Notion()
 testcafe.createPage()
